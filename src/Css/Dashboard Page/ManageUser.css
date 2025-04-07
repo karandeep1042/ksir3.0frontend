@@ -1,0 +1,691 @@
+.manageuserpagechildcontainer {
+    display: flex;
+    padding: 0vh 2vw;
+    padding-top: 4vh;
+    gap: 2vh;
+    flex-wrap: wrap;
+}
+
+.manageusersuppertables {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.manageusertablesection {
+    /* box-shadow: 0 0px 8px 0 rgba(223, 223, 223, 0.2), 0 0px 20px 0 rgba(209, 209, 209, 0.19); */
+    box-shadow: 0 0px 8px 0 rgba(184, 184, 184, 0.2), 0 0px 20px 0 rgba(179, 179, 179, 0.19);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 47%;
+    background-color: white;
+    padding: 2vh 1vw;
+}
+
+.manageusertablecontainer table {
+    width: 100%;
+}
+
+.manageusertablecontainer table thead tr th {
+    width: 10vw;
+    padding: 2vh 0px;
+    /* padding-right: 5vw; */
+}
+
+
+.manageusertablecontainer table thead {
+    /* background-color: #e6f2ff; */
+    background-color: #398cf1;
+    /* color: rgb(102, 102, 102); */
+    color: white;
+}
+
+.manageusertablecontainer table tbody tr {
+    /* display: table-cell; */
+    text-align: center;
+    padding: 0 1vw;
+
+}
+
+.manageusertablecontainer table tbody td {
+    padding: 1vh 0;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    /* border-bottom: 1px solid #515050; */
+}
+
+.recorddeletebutton {
+    display: flex;
+    justify-content: center;
+}
+
+.recorddeletebutton p {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: red;
+    border: 1px solid red;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.recorddeletebutton p:hover {
+    background-color: rgb(255, 204, 204);
+}
+
+.manageusertableheader {
+    width: 100%;
+}
+
+.adduserbutton {
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+    padding: 10px 20px;
+    color: #398cf1;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #398cf1;
+    transition: .3s;
+}
+
+.adduserbutton:hover {
+    background-color: rgb(224, 241, 253);
+}
+
+.manageusertablecontainer {
+    height: 27vh;
+    /* overflow-y: scroll; */
+}
+
+.managecoursetablecontainer {
+    height: 27vh;
+    /* overflow-y: scroll; */
+}
+
+.managecoursetablecontainer table thead tr th {
+    width: 11vw;
+    padding: 2vh 0px;
+}
+
+.managecoursetablecontainer table {
+    width: 100%;
+}
+
+.managecoursetablecontainer table thead {
+    /* background-color: #e6f2ff; */
+    background-color: #398cf1;
+    /* color: rgb(102, 102, 102); */
+    color: white;
+}
+
+.managecoursetablecontainer table tbody tr {
+    /* display: table-cell; */
+    text-align: center;
+    padding: 0 1vw;
+
+}
+
+.managecoursetablecontainer table tbody td {
+    padding: 1vh 0;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    /* border-bottom: 1px solid #515050; */
+}
+
+.managesubjecttablecontainer table {
+    width: 100%;
+}
+
+.managesubjecttablecontainer table thead tr th {
+    width: 16vw;
+    padding: 2vh 0px;
+    /* padding-right: 5vw; */
+}
+
+
+.managesubjecttablecontainer table thead {
+    /* background-color: #e6f2ff; */
+    background-color: #398cf1;
+    /* color: rgb(102, 102, 102); */
+    color: white;
+}
+
+.managesubjecttablecontainer table tbody tr {
+    /* display: table-cell; */
+    text-align: center;
+    padding: 0 1vw;
+
+}
+
+.managesubjecttablecontainer table tbody td {
+    padding: 1vh 0;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    /* border-bottom: 1px solid #515050; */
+}
+
+.manageuserslowertables {
+    width: 100%;
+}
+
+.managesubjecttablesection {
+    width: 97.5%;
+    height: 38.4vh;
+    overflow-y: hidden;
+}
+
+.floatingactionbutton {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #398cf1;
+    color: white;
+    padding: 17px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+.floatingactionbutton .fa-plus {
+    transition: .3s;
+}
+
+.floatingactionbutton:hover .fa-plus {
+    transform: rotate(135deg);
+}
+
+.floatingactionlistitems {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1vh;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scale(0);
+    padding: 1vh 0;
+    transition: .4s;
+}
+
+.floatingactionlistitem {
+    width: 6vw;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    /* width: ; */
+    align-items: center;
+    background-color: #398cf1;
+    transition: .4s;
+}
+
+.floatingactionlistitem:hover {
+    transform: scale(1.04);
+}
+
+.floatingactionbutton:hover .floatingactionlistitems {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+    /* display: flex; */
+    bottom: 100%;
+}
+
+.adduseritembtn {
+    width: 5vw;
+}
+
+.addcourseitem {
+    width: 5.5vw;
+}
+
+.adduserformcontainer {
+    position: fixed;
+    bottom: -100%;
+    /* top: 0%; */
+    right: 1.5vw;
+    box-shadow: 0 0px 8px 0 rgba(9, 138, 243, 0.2), 0 0px 20px 0 rgba(9, 138, 243, 0.2);
+    background-color: white;
+    padding: 3vh 2vw;
+    border-radius: 5px;
+    z-index: 5;
+    transition: .3s;
+}
+
+.adduserformcontaineractive {
+    bottom: 3%;
+}
+
+.adduserformheader {
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adduserformheader i {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #1b7df5;
+    color: white;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.adduserformheader i:hover {
+    /* transform: translateY(10px); */
+    transform: scale(1.1);
+}
+
+
+.adduserformbody {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.adduserforminputitem input {
+    padding: 1.5vh .5vw;
+    outline: none;
+    border-radius: 5px;
+    margin-top: .5vh;
+    width: 15vw;
+    border: 2px solid rgb(184, 184, 184);
+    transition: .4s;
+}
+
+.adduserforminputitem p {
+    font-weight: 600;
+}
+
+.adduserforminputitem input:focus {
+    border-color: #398cf1;
+}
+
+.adduserformsubmitbtncontainer {
+    margin-top: 1vh;
+}
+
+.adduserformsubmitbtn {
+    width: 100%;
+    padding: 2vh 0;
+    cursor: pointer;
+    background-color: #398cf1;
+    color: white;
+    outline: none;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 0;
+    transition: .4s;
+}
+
+.adduserformsubmitbtn:hover {
+    background-color: #1b7df5;
+}
+
+.addcourseformcontainer {
+    position: fixed;
+    bottom: -100%;
+    /* bottom: 3%; */
+    /* top: 0%; */
+    right: 1.5vw;
+    box-shadow: 0 0px 8px 0 rgba(9, 138, 243, 0.2), 0 0px 20px 0 rgba(9, 138, 243, 0.2);
+    background-color: white;
+    padding: 3vh 2vw;
+    border-radius: 5px;
+    z-index: 5;
+    transition: .3s;
+}
+
+.addcourseformcontaineractive {
+    bottom: 3%;
+}
+
+.addsubjectformcontainer {
+    position: fixed;
+    bottom: -100%;
+    /* bottom: 3%; */
+    /* top: 0%; */
+    right: 1.5vw;
+    box-shadow: 0 0px 8px 0 rgba(9, 138, 243, 0.2), 0 0px 20px 0 rgba(9, 138, 243, 0.2);
+    background-color: white;
+    padding: 3vh 2vw;
+    border-radius: 5px;
+    z-index: 5;
+    transition: .3s;
+}
+
+.addsubjectformcontaineractive {
+    bottom: 3%;
+}
+
+.adduserforminputitem select {
+    width: 100%;
+    padding: 1.5vh .5vw;
+    outline: none;
+    border: 2px solid rgb(184, 184, 184);
+    transition: .4s;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="black"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+    margin-top: .5vh;
+    border-radius: 5px;
+}
+
+.paginationbuttoncontainer {
+    display: flex;
+    gap: .5vw;
+}
+
+.paginationbtn {
+    padding: 10px 15px;
+    border: 1px solid rgb(194, 194, 194);
+    color: #398cf1;
+    outline: none;
+    background-color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.numberpaginationbtn {
+    padding: 10px 14px;
+    border: 0;
+    /* border-bottom: 1px solid rgb(194, 194, 194);
+    border-left: 1px solid rgb(194, 194, 194); */
+    outline: none;
+    background-color: white;
+    /* color: white; */
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.paginationbtn:hover {
+    background-color: #1b7df5;
+    color: white;
+    border-color: #1b7df5;
+}
+
+.currentpage {
+    background-color: #1b7df5;
+    color: white;
+    border-color: #1b7df5;
+}
+
+.nextpaginationbtn {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.prevpaginationbtn {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.managestudenttablesection {
+    width: 98%;
+    height: 79.2vh;
+    overflow-y: hidden;
+}
+
+.usertablefiltermainsection {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.usertablefilterchildcontainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 1vw;
+}
+
+.resetfilterbutton i {
+    color: #398cf1;
+    transition: .4s;
+}
+
+.resetfilterbutton i:hover {
+    transform: rotate(180deg);
+}
+
+.usertablesearchfilter {
+    display: flex;
+    align-items: center;
+}
+
+.usertablesearchfilter input {
+    padding: 1vh .5vw;
+    outline: none;
+    width: 8vw;
+    border-radius: 5px;
+    border: 2px solid;
+    color: rgb(141, 141, 141);
+    border-color: rgb(184, 184, 184);
+    transition: .4s;
+}
+
+.usertablesearchfilter input:focus {
+    border-color: #398cf1;
+}
+
+.usertablesearchfilter i {
+    background-color: #398cf1;
+    cursor: pointer;
+    color: white;
+    padding: 1.15vh .5vw;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .4s;
+}
+
+.usertablesearchfilter i:hover {
+    /* transform: rotate(360deg); */
+    background-color: #0d78fc;
+}
+
+.filterbtn {
+    display: none;
+}
+
+.usertableselectcoursefilter select {
+    width: 11vw;
+    padding: 1vh .5vw;
+    outline: none;
+    border: 2px solid rgb(184, 184, 184);
+    /* color: #398cf1; */
+    transition: .4s;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="black"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+    /* margin-top: .5vh; */
+    color: rgb(141, 141, 141);
+    border-radius: 5px;
+}
+
+.usertableselectcoursefilter select:focus {
+    border-color: #398cf1;
+}
+
+.applyfilterbutton p {
+    background-color: #398cf1;
+    padding: 1vh 1vw;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.applyfilterbutton p:hover {
+    background-color: #0d78fc;
+}
+
+.subjecttablefilterchildcontainer {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .usertablefilterchildcontainer {
+        display: none;
+    }
+
+    .manageusersuppertables {
+        flex-direction: column;
+    }
+
+    .manageusertablesection {
+        width: 100%;
+    }
+
+    .manageusertableheader {
+        padding: 1vh 4vw;
+        width: auto;
+        position: relative;
+    }
+
+    .manageusertablecontainer {
+        padding: 0 4vw;
+    }
+
+    .usertablefiltermainsection {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .subjecttablefilterchildcontainer {
+        display: flex;
+        position: absolute;
+        gap: 2vh;
+        box-shadow: 0 0px 8px 0 rgba(184, 184, 184, 0.2), 0 0px 20px 0 rgba(179, 179, 179, 0.19);
+        top: 100%;
+        right: 0;
+        background-color: white;
+        z-index: -1;
+        opacity: 0;
+        border-radius: 5px;
+        width: 91%;
+        padding: 2vh 5vw;
+        flex-direction: column;
+        transition: .3s;
+    }
+
+    .subjecttablefilterchildcontaineractive {
+        z-index: 3;
+        opacity: 1;
+    }
+
+    .paginationbuttoncontainer {
+        position: absolute;
+        bottom: 120%;
+        right: 0;
+    }
+
+    .usertablesearchfilter input {
+        width: 100%;
+        padding: 1vh 3vw;
+    }
+
+    .managecoursetablecontainer {
+        padding: 0 4vw;
+    }
+
+    .filterbtn {
+        display: block;
+        border: none;
+        background-color: #0d78fc;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .filtersectionbuttons {
+        display: flex;
+        gap: 2vw;
+    }
+
+    .applyfilterbutton p {
+        padding: 1vh 3vw;
+    }
+
+    .usertableselectcoursefilter select {
+        width: 100%;
+    }
+
+    .subjecttablefilterselectitems {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .usertableselectcoursefilter {
+        width: 48%;
+    }
+
+    .subjecttablefilterheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .subjecttablefilterheader i {
+        color: white;
+        background-color: #1b7df5;
+        padding: 8px 10px;
+        border-radius: 50%;
+    }
+
+    .floatingactionlistitem {
+        width: 27vw;
+    }
+
+    .adduserformcontainer{
+        width: 70%;
+        padding: 3vh 6vw;
+    }
+
+    .adduserforminputitem input{
+        width: 97%;
+    }
+
+    .addsubjectformcontainer{
+        width: 70%;
+        padding: 3vh 6vw;
+    }
+
+    .addcourseformcontainer{
+        width: 70%;
+        padding: 3vh 6vw;
+    }
+
+    .managesubjecttablesection{
+        height: 48vh;
+        padding-bottom: 4vh;
+    }
+
+    .managesubjecttablecontainer{
+        padding: 0 4vw;
+    }
+
+    .manageuserslowertables{
+        margin-bottom: 4vh;
+    }
+}

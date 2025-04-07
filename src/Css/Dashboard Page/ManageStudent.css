@@ -1,0 +1,73 @@
+.managestudentfloatingactionbutton {
+    display: flex;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #398cf1;
+    color: white;
+    padding: 17px 20px;
+    font-weight: 600;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .3s;
+    gap: .5vw;
+    font-size: 1.1rem;
+}
+
+.managestudentfloatingactionbutton:hover {
+    background-color: #1e7ff5;
+}
+
+.addstudentslimitinputparentcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addstudentslimitinputparentcontainer input {
+    padding: 1.5vh .5vw;
+    outline: none;
+    border-radius: 5px;
+    margin-top: .5vh;
+    /* width: 15vw; */
+    border: 2px solid rgb(184, 184, 184);
+    transition: .4s;
+}
+
+.addstudentslimitinput{
+    width: 42%;
+}
+
+.addstudentslimitinputparentcontainer p {
+    font-weight: 600;
+}
+
+.addstudentslimitinputparentcontainer input:focus {
+    border-color: #398cf1;
+}
+
+.addstudentforminputitem select {
+    width: 100%;
+    padding: 1.5vh .5vw;
+    outline: none;
+    border: 2px solid rgb(184, 184, 184);
+    transition: .4s;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="black"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+    margin-top: .5vh;
+    border-radius: 5px;
+}
+
+.managesubjecttablecontainer tbody{
+    /* display: none; */
+}
+
+.addstudentforminputitem p{
+    font-weight: 600;
+}

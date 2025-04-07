@@ -1,0 +1,114 @@
+.selectpapersubmitbtncontainer {
+    display: flex;
+}
+
+.insertmarksbody {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.insertmarkssection {
+    display: none;
+    margin-top: 3vh;
+    padding: 3vh 2vw;
+    border-radius: 20px;
+    box-shadow: 0 0px 8px 0 rgba(184, 184, 184, 0.2), 0 0px 20px 0 rgba(179, 179, 179, 0.19);
+    background-color: white;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.studentid {
+    font-size: 1.1rem;
+}
+
+.studentinfocontainer {
+    display: flex;
+    gap: 10vw;
+}
+
+.insertmarksinputfields {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.insertmarksinputfieldsrow {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.insertmarksinputfield {
+    width: 24vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insertmarksinputfield input {
+    padding: 1.5vh .5vw;
+    outline: none;
+    border-radius: 5px;
+    width: 15vw;
+    border: 2px solid rgb(184, 184, 184);
+    transition: .4s;
+}
+
+.insertmarksinputfield input:focus {
+    border-color: #398cf1;
+}
+
+.insertmarksbtnscontainer {
+    display: flex;
+    gap: 4vw;
+}
+
+.prevbtn {
+    background-color: #afafaf;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 600;
+    color: white;
+    padding: 1.5vh 4vw;
+}
+
+.prevbtn:hover {
+    background-color: #8d8d8d;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .insertmarkssection{
+        padding: 3vh 6vw;
+    }
+
+    .studentinfocontainer{
+        display: block;
+    }
+
+    .insertmarksinputfields{
+        gap: 2vh;
+    }
+
+    .insertmarksinputfieldsrow{
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .insertmarksinputfield{
+        width: auto;
+        gap: 3vw;
+    }
+
+    .insertmarksinputfield input{
+        width: 100%;
+        padding: 1.5vh 3vw;
+    }
+
+    .insertmarksinputfieldsrow{
+        width: auto;
+    }
+}

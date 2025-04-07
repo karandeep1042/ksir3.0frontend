@@ -1,0 +1,60 @@
+.reporttablemaincontainer {
+    display: none;
+    padding: 3vh 2vw;
+    margin-top: 3vh;
+    box-shadow: 0 0px 8px 0 rgba(184, 184, 184, 0.2), 0 0px 20px 0 rgba(179, 179, 179, 0.19);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.reporttablebody table tr td {
+    padding: .6vh 0;
+}
+
+.reporttablebody {
+    height: 30vh;
+    margin-top: 3vh;
+    overflow-y: scroll;
+}
+
+.reporttablebody table {
+    border-bottom: 3px solid #398cf1;
+}
+
+.reporttablebody table thead th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.reporttablebody table thead th:last-child {
+    border-top-right-radius: 5px;
+}
+
+.genratereporttableheader {
+    width: 100%;
+}
+
+.tableheaderrow th {
+    padding: 1.5vh 0;
+}
+
+.reporttablebody table tr td {
+    padding: 1.5vh 0;
+}
+
+.tableheaderrow {
+    background-color: #398cf1;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .reporttablemaincontainer {
+        padding: 3vh 6vw;
+    }
+    
+    .genratereporttableheader{
+        flex-direction: row;
+    }
+}

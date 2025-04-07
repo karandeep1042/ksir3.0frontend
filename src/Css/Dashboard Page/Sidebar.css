@@ -1,0 +1,299 @@
+.sidebarmaincontainer {
+    width: 18vw;
+    background-color: white;
+    height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(107, 107, 107, 0.2), 0 6px 20px 0 rgba(214, 214, 214, 0.19);
+    transition: .3s;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sidebarchildcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sidebarheadersection {
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+
+.sidebarheaderimage {
+    background-color: #398cf1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 21%; */
+    margin-left: 1vw;
+    padding: .5vh 0;
+}
+
+.sidebarheaderimage p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    padding: .3vh 1vw;
+}
+
+.sidebarheaderimage img {
+    width: 80%;
+}
+
+.sidebarheadermainheading p {
+    font-weight: 600;
+}
+
+.sidebarheadermainheading label {
+    font-size: .8rem;
+    color: rgb(161, 159, 159);
+}
+
+.sidebarhidebutton i {
+    position: absolute;
+    font-size: 1.4rem;
+    top: 6vh;
+    left: 96.5%;
+    z-index: 4;
+    cursor: pointer;
+    color: #398cf1;
+    transition: .3s;
+}
+
+.sidebarhidebutton i:hover {
+    transform: scale(1.2);
+}
+
+.sidebarbodysection {
+    width: 100%;
+}
+
+.sidebarbodylists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vh 1vw;
+    gap: 1vw;
+}
+
+.sidebarbodylist {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 2vh 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #6d6d6d;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.sidebarbodylist a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebarbodylist i {
+    padding-top: .5vh;
+    margin-left: 1vw;
+}
+
+.activesidebarbodylist {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 2vh 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    transition: .3s;
+    border-radius: 10px;
+    background-color: #398cf1;
+}
+
+.activesidebarbodylist a {
+    color: white;
+    text-decoration: none;
+}
+
+.activesidebarbodylist i {
+    margin-left: 1vw;
+}
+
+
+.sidebarbodylist:hover {
+    color: white;
+    background-color: #80b9ff;
+}
+
+.dashboardmaincontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebarclosebtn {
+    position: absolute;
+    /* right: 95%; */
+    left: -5%;
+    display: none;
+    top: 15%;
+    /* font-size: 1.2rem; */
+    color: white;
+    background-color: #398cf1;
+    border-radius: 50%;
+    padding: .7vh 2.5vw;
+    transition: .3s;
+}
+
+.navbarmaincontainer {
+    position: fixed;
+    width: 82vw;
+    height: 10vh;
+    background-color: white;
+    left: 18vw;
+    box-shadow: 0 4px 8px 0 rgba(192, 192, 192, 0.2), 0 6px 20px 0 rgba(214, 214, 214, 0.19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s;
+}
+
+.navbarlogoandheader {
+    width: 80%;
+    height: 100%;
+    gap: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+.navbarlogo {
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbarlogo img {
+    width: 100%;
+    height: 80%;
+}
+
+.navbarheader {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sidebaricon {
+    display: none;
+    font-size: 1.7rem;
+}
+
+.minisidebar {
+    width: 5vw;
+}
+
+.minisidebar .sidebarhidebutton i {
+    transform: rotate(180deg);
+    left: 90%;
+}
+
+/* .minisidebar .sidebarheaderimage {
+    width: 100%;
+} */
+
+.minisidebar .sidebarbodylist i {
+    font-size: 1.2rem;
+}
+
+.minisidebar .activesidebarbodylist i {
+    font-size: 1.2rem;
+}
+
+.minisidebar .sidebarheadermainheading {
+    transition: .3s;
+    display: none;
+}
+
+.minisidebar .sidebarbodylist p {
+    display: none;
+}
+
+.minisidebar .activesidebarbodylist p {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .sidebarmaincontainer {
+        position: fixed;
+        width: 80vw;
+        transform: translateX(110vw);
+        z-index: 4;
+    }
+
+    .sidebarhidebutton{
+        display: none;
+    }
+
+    .navbarmaincontainer {
+        width: 100vw;
+        left: 0;
+        gap: 0;
+        z-index: 3;
+    }
+
+    .navbarlogo {
+        padding-left: 2%;
+    }
+
+    .navbarheader {
+        font-size: 1rem;
+    }
+
+    .sidebaricon {
+        display: block;
+        margin-right: 4%;
+    }
+
+    .sidebarheadersection{
+        gap: 4vw;
+        padding-top: 3vh;
+    }
+
+    .sidebarheaderimage{
+        margin-left: 7vw;
+    }
+
+    .sidebarheaderimage p{
+        padding: .4vh 4vw;
+    }
+
+    .sidebarbodylists{
+        padding: 1vh 7vw;
+        gap: 2vh;
+    }
+
+    .sidebarbodylist p{
+        margin-left: 3vw;
+    }
+
+    .sidebarbodylist i{
+        margin-left: 4vw;
+    }
+
+    .activesidebarbodylist p{
+        margin-left: 3vw;
+    }
+
+    .activesidebarbodylist i{
+        margin-left: 4vw;
+    }
+}
